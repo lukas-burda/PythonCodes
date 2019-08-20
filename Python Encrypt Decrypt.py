@@ -31,7 +31,6 @@ def str_to_bin(string):
         binario += bin(ord(i))[2::] + ' '
     return binario
 
-
 #apresentação
 print('~'*40)
 print('Lukas Gabriel Burda Ferreira Longo')
@@ -51,7 +50,7 @@ while (opcao != 3):
         print('~'*40)
         palavra = str(input('\nInsira uma frase para encriptar: '))
         indice = len(palavra)
-
+        
         #para encriptar
         for pos in range(indice):
             ind.append(vetA.index(palavra[pos]))
@@ -80,8 +79,7 @@ while (opcao != 3):
         binary = str(input('\nInsira uma sequência binária para desencriptar: '))
         text = bin_to_str(binary)
         indice = len(text)
-        print('~'*40)
-        
+        print('~'*40)        
         #chamando pergunta para binário > cripto
         resp = str(input('Deseja transformar o código binário em cripto? <s/n> '))
         if (resp == 's'):
@@ -96,9 +94,7 @@ while (opcao != 3):
         if (resp == 'n'):
             print('~'*40)
             print('\nRetornando ao menu...')
-
             
-
     elif (opcao == 3):
         print('\nFinalizando...')
         print('~'*40)
